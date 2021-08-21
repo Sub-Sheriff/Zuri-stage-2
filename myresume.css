@@ -1,0 +1,194 @@
+html {
+    box-sizing: border-box;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  font-weight: normal;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+    margin: 1% 1%;
+    /*min-height: 100vh;*/
+
+  }
+/*header*/
+
+  .resume__header {
+      display: flex;
+      align-items: center;
+      background-color: black;
+      gap: 10px;
+      justify-content: space-between;
+  }
+
+  .bio {
+      margin-left: 10px;
+  }
+
+  .bio>h1 {
+      color: skyblue;
+      font-size: 2em;
+  }
+
+  .FSD {
+      font-size: 1.2em;
+  }
+
+  .bio p {
+    color: white;
+  }
+
+  .header__image {
+      margin: 10px 10px 10px 0;
+      align-self:left ;
+  }
+
+
+  /*contact details*/
+
+.contact__details {
+  /*display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  margin: 1% 0 1% 0;
+  justify-content: center;
+  justify-items: center;
+  border-top: 2px solid skyblue;
+  border-bottom: 2px solid skyblue;*/
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1% 0 1% 0;
+  border-top: 2px solid skyblue;
+  border-bottom: 2px solid skyblue;
+}
+
+/*skills*/
+
+.skills {
+  color: skyblue;
+}
+
+.skill__list {
+ /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) );
+  column-gap: 5px;
+  row-gap: 5px;
+  align-items: center;
+*/
+display: flex;
+gap: 10px;
+}
+
+.skill__list>p {
+  background-color: cornflowerblue;
+  color: rgb(250, 246, 246);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/*work experience*/
+
+.work__history {
+  padding-top: 1%;
+}
+
+.work__experience {
+  color: skyblue;
+}
+
+.duration {
+  font-style: italic;
+}
+
+.work__history>div {
+  margin: 5px 0 5px 0;
+}
+
+/*education history*/
+
+.education {
+  color: skyblue;
+}
+
+.education__history>div {
+  margin: 5px 0 5px 0;
+}
+
+/*language*/
+
+.language {
+  color: skyblue;
+}
+
+.language__type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.level {
+  color: #7a9e9f;
+}
+
+@media (max-width: 425px) {
+  body {
+    width: 100vw;
+  }
+  
+  /*header*/
+  .resume__header {
+   /* display: grid;
+    grid-template-rows: auto 1fr;
+    align-content: center;*/
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+  }
+
+  .header__image {
+    order: 1;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+
+  
+  .bio {
+    order: 2;
+  }
+
+  
+
+  /*contact details*/
+  .contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1% 0 1% 0;
+  }
+
+  /*skills*/
+
+  .skill__list{
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    max-width: fit-content;
+  }
+
+  /*language*/
+  .language__type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
